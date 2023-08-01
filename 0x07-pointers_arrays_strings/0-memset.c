@@ -9,17 +9,14 @@
  *
  * Return: A pointer to the filled memory area @s.
  */
-char *_memset(char *s, char b, unsigned int n)
-
+void *_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned int i;
+	unsigned int index;
+	unsigned char *destination = dest;
+	const unsigned char *source = src;
 
-	/*Delacring FOR*/
-	for (i = 0; i < n; i++)
-	{
-		*(s + i) = b; /*add 1 position s*/
+	for (index = 0; index < n; index++)
+		destination[index] = source[index];
 
-	} /*END FOR*/
-
-	return (s);
+	return (dest);
 }
