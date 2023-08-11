@@ -9,7 +9,7 @@ int wordcount(char *str)
 {
 	int x, y, z;
 
-	x= 0;
+	x = 0;
 	z = 0;
 
 	for (y = 0; str[y] != '\0'; y++)
